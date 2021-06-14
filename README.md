@@ -2,7 +2,6 @@ Spitfire is a Moxy Webworks project, harnessing TailwindsCSS to create a starter
 
 -NS is the North South Yacht Sales version, built on TailPress - info below:
 
-<p><img src="https://tailpress.io/images/logo.svg" width="200" alt="Laravel Mix"></p>
 
 # Introduction
 TailPress is a minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).
