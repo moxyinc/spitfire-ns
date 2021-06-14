@@ -1,3 +1,7 @@
+Spitfire is a Moxy Webworks project, harnessing TailwindsCSS to create a starter theme for client projects.
+
+-NS is the North South Yacht Sales version, built on TailPress - info below:
+
 <p><img src="https://tailpress.io/images/logo.svg" width="200" alt="Laravel Mix"></p>
 
 # Introduction
