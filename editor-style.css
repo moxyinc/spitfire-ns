@@ -70,6 +70,9 @@
 .float-right {
       float: right;
 }
+.clear-both {
+      clear: both;
+}
 .m-8 {
       margin: 2rem;
 }
@@ -110,6 +113,22 @@
 .my-9 {
       margin-top: 2.25rem;
       margin-bottom: 2.25rem;
+}
+.mx-24 {
+      margin-left: 6rem;
+      margin-right: 6rem;
+}
+.mx-36 {
+      margin-left: 9rem;
+      margin-right: 9rem;
+}
+.mx-44 {
+      margin-left: 11rem;
+      margin-right: 11rem;
+}
+.my-6 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
 }
 .mb-8 {
       margin-bottom: 2rem;
@@ -316,6 +335,9 @@
 .justify-start {
       justify-content: flex-start;
 }
+.justify-evenly {
+      justify-content: space-evenly;
+}
 .rounded {
       border-radius: 0.25rem;
 }
@@ -344,6 +366,9 @@
 .border {
       border-width: 1px;
 }
+.border-2 {
+      border-width: 2px;
+}
 .border-b {
       border-bottom-width: 1px;
 }
@@ -364,6 +389,10 @@
 .border-blue-500 {
       --tw-border-opacity: 1;
       border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+}
+.border-red-900 {
+      --tw-border-opacity: 1;
+      border-color: rgba(127, 29, 29, var(--tw-border-opacity));
 }
 .bg-primary {
       --tw-bg-opacity: 1;
@@ -403,9 +432,17 @@
       --tw-bg-opacity: 1;
       background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
 }
+.bg-red-500 {
+      --tw-bg-opacity: 1;
+      background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
 .bg-gray-100 {
       --tw-bg-opacity: 1;
       background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+.bg-secondary {
+      --tw-bg-opacity: 1;
+      background-color: rgba(56, 174, 204, var(--tw-bg-opacity));
 }
 .bg-opacity-70 {
       --tw-bg-opacity: 0.7;
@@ -887,8 +924,14 @@ header#masthead div#hero-image {
       .sm\:mb-20 {
             margin-bottom: 5rem;
       }
+      .sm\:flex {
+            display: flex;
+      }
       .sm\:w-screen {
             width: 100vw;
+      }
+      .sm\:justify-evenly {
+            justify-content: space-evenly;
       }
       .sm\:px-4 {
             padding-left: 1rem;
@@ -944,6 +987,9 @@ header#masthead div#hero-image {
       }
       .md\:flex-shrink-0 {
             flex-shrink: 0;
+      }
+      .md\:justify-evenly {
+            justify-content: space-evenly;
       }
       .md\:px-8 {
             padding-left: 2rem;
@@ -1005,6 +1051,9 @@ header#masthead div#hero-image {
       }
       .lg\:mt-28 {
             margin-top: 7rem;
+      }
+      .lg\:mb-0 {
+            margin-bottom: 0px;
       }
       .lg\:block {
             display: block;

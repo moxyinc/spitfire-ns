@@ -102,18 +102,24 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 <section class="z-20 w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
-	<div id="contact-info" class="container mx-auto max-w-prose text-center text-dark py-4 z-10 ">
-		<?php if (is_front_page()): ?>
-			<p class="z-10 mb-2 font-serif italic font-maple">With 8 locations across the province and the Caribbean, <strong>North South Yacht Sales</strong> can help you buy or sell your power or sail vessel. And you will be guided by an experienced Yacht Broker — helping you make the best choices — all the way through the process.</p>
-		<?php endif; ?>
-		
-		<h3 class="font-maple"><em>Head Office:</em> 1 Port St. East, Port Credit, Ontario — Phone: <strong>(905) 891-6764</strong></h1>
-		
-
-		
-
 	
-	</div><!-- /#contact-info -->
+	<div class="container mx-auto flex flex-wrap sm:justify-evenly items-center my-6 px-6 lg:xl-0">
+	
+		<a href="/listings" alt="Featured Listings" class="text-blue-500 text-lg"><button class="bg-primary hover:bg-blue-500 text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">Featured Listings</button></a>
+	
+		<div id="contact-info" class="mx-auto max-w-prose text-center text-dark py-4 z-10">
+			<?php if (is_front_page()): ?>
+				<p class="z-10 mb-2 font-serif italic font-maple">With 8 locations across throughout Ontario and the Caribbean, <strong>North South Yacht Sales</strong> can help you buy or sell your power or sail vessel. And you will be guided by an experienced Yacht Broker — helping you make the best choices — all the way through the process.</p>
+			<?php endif; ?>
+			
+			<h3 class="font-maple"><em>Head Office:</em> 1 Port St. East, Port Credit, Ontario — Phone: <strong>(905) 891-6764</strong></h1>
+			
+		</div><!-- /#contact-info -->
+			
+			<a href="/pre-owned-vessels/" alt="Featured Listings" class="text-blue-500 text-lg"><button class="bg-primary hover:bg-blue-500 text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">All Pre-Owned Vessels</button></a>
+		
+	</div>
+
 </section>
 
 
