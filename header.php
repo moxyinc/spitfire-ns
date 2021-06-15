@@ -104,7 +104,7 @@
 <section class="z-20 w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
 	<div id="contact-info" class="container mx-auto max-w-prose text-center text-dark py-4 z-10 ">
 		<?php if (is_front_page()): ?>
-			<p class="z-10 mb-2 font-serif italic font-maple">With 8 locations across the province and the Caribbean, NSYS can help you find the boat of your dreams at the best prices available. You will be guided by certified Yacht Brokers helping you make the best choices all the way through the buying process.</p>
+			<p class="z-10 mb-2 font-serif italic font-maple">With 8 locations across the province and the Caribbean, North South Yacht Sales can help you find the boat of your dreams at the best prices available. You will be guided by certified Yacht Brokers helping you make the best choices all the way through the buying process.</p>
 		<?php endif; ?>
 		
 		<h3 class="font-maple"><em>Head Office:</em> 1 Port St. East, Port Credit, Ontario — Phone: <strong>(905) 891-6764</strong></h1>
