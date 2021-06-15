@@ -98,6 +98,7 @@
 	</h3>
 </div>	
 
+
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 <section class="z-20 w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
@@ -108,7 +109,9 @@
 		
 		<h3 class="font-maple"><em>Head Office:</em> 1 Port St. East, Port Credit, Ontario — Phone: <strong>(905) 891-6764</strong></h1>
 		
-		<h1>Hello, World</h1>
+
+		
+
 	
 	</div><!-- /#contact-info -->
 </section>
