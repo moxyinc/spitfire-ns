@@ -105,7 +105,7 @@
 	
 	<div class="container mx-auto flex flex-wrap sm:justify-evenly items-center my-6 px-6 lg:xl-0">
 	
-		<a href="/listings" alt="Featured Listings" class="text-blue-500 text-lg"><button class="bg-primary hover:bg-blue-500 text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">Featured Listings</button></a>
+		<a href="#" alt="Featured Listings" class="text-blue-500 text-lg"><button class="bg-primary hover:bg-blue-500 text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">Featured Listings</button></a>
 	
 		<div id="contact-info" class="mx-auto max-w-prose text-center text-dark py-4 z-10">
 			<?php if (is_front_page()): ?>
