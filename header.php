@@ -28,7 +28,7 @@
 		<div class="z-10 w-full border-solid border-t-8 border-blue-300">
 			<div class="flex flex-wrap justify-between">
 				
-				<div id="logo-container" class="w-72 max-w-xs my-9 md:w-1/3 md:mx-9  md:w-1/3 md:max-w-lg lg:mx-14">
+				<div id="logo-container" class="w-72 max-w-xs mt-9 md:w-1/3 md:mx-9  md:w-1/3 md:max-w-lg lg:mx-14">
 				  <?php if (has_custom_logo()) { ?>
 					  <a href="<?php echo get_bloginfo("url"); ?>">
 						  <?php the_custom_logo(); ?>
@@ -38,7 +38,7 @@
 						  <img src="<?php echo get_template_directory_uri(); ?>/resources/svg/northsouth-logo.svg" alt="Moxy Logo">
 					  </a>
 				  <?php } ?>
-				  <p class="cta"></p>
+				  
 				</div>
 				
 				<div id="hamburger-container" class="lg:hidden z-10 m-3">
@@ -107,9 +107,11 @@
 	
 		<a href="#" alt="Featured Listings" class="text-blue-500 text-lg"><button class="bg-primary hover:bg-blue-500 text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">Featured Listings</button></a>
 	
-		<div id="contact-info" class="mx-auto max-w-prose text-center text-dark py-4 z-10">
+		<div id="contact-info" class="mx-auto max-w-prose text-center text-dark pl-6 py-4 z-10">
 			<?php if (is_front_page()): ?>
-				<p class="z-10 mb-2 font-serif italic font-maple">With 8 locations across throughout Ontario and the Caribbean, <strong>North South Yacht Sales</strong> can help you buy or sell your boat. You will be guided by an experienced Yacht Broker — helping you make the best choices — all the way through the process.</p>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/cpyb-moxy-105x75.png" alt="CPYB Logo" class="float-right ml-6 opacity-90 hover:opacity-100" width="105" height="75" />
+				<p class="z-10 mb-2 font-serif italic font-maple text-right"><strong>North South Yacht Sales</strong> is a Certified Professional Yacht Broker (CPYB) Endorsed Brokerage.
+Buy or sell your boat with an experienced professional guiding you through the entire process.</p>
 			<?php endif; ?>
 			
 			<h3 class="font-maple"><em>Head Office:</em> 1 Port St. East, Port Credit, Ontario — Phone: <strong>(905) 891-6764</strong></h1>
