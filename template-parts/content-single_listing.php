@@ -1,7 +1,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <header class="entry-header mb-4">
-	<?php the_title( sprintf( '<h1 class="entry-title sm:text-2xl lg:text-3xl 2xl:text-5xl uppercase leading-tight mb-1 text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+	<?php //the_title( sprintf( '<h1 class="entry-title sm:text-2xl lg:text-3xl 2xl:text-5xl uppercase leading-tight mb-1 text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+	<h1 class="entry-title sm:text-2xl lg:text-3xl 2xl:text-5xl uppercase leading-tight mb-1 text-primary" rel="bookmark">
+		<?php the_title() ?></h1>
+	<h2 class="text-secondary text-2xl pl-6"><?php if (get_field('callout')) { the_field( 'callout' ); } ?></span></h2>  
+	  
 </header>
 
 
