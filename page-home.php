@@ -27,7 +27,7 @@ $the_query = new WP_Query(array(
 		
 		?>
 		<li class="font-extrabold">
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			<a class="hover:text-primary" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</li>
 	<?php endwhile; ?>
 	</ul>

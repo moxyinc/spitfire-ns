@@ -901,6 +901,10 @@ header#masthead div#hero-image {
       --tw-text-opacity: 1;
       color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+.hover\:text-primary:hover {
+      --tw-text-opacity: 1;
+      color: rgba(3, 96, 203, var(--tw-text-opacity));
+}
 .hover\:underline:hover {
       text-decoration: underline;
 }
