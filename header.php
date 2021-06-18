@@ -301,7 +301,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 
 		<?php do_action("tailpress_content_start"); ?>
 		
-		<h1>Hello, World</h1>
+
 
 		<main class="max-w-screen-lg xl:max-w-screen-xl mx-auto mt-6 px-0 sm:px-4 md:px-8 mb-14 sm:mb-20 xl:mb-12">
 
