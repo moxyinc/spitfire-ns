@@ -6,45 +6,6 @@
 
 
 
-<?php 
-
-// query
-$the_query = new WP_Query(array(
-	'post_type'			=> 'listing',
-	'posts_per_page'	=> -1,
-	'meta_key'			=> 'featured',
-	'orderby'			=> 'meta_value',
-	'order'				=> 'DESC'
-));
-
-?>
-<?php if( $the_query->have_posts() ): ?>
-
-<?php
-$url = rtrim(get_permalink(),'/');
-$url = $url . ('?template=external');
-?>
-
-	<ul>
-	<?php while( $the_query->have_posts() ) : $the_query->the_post(); 
-		
-		$class = get_field('featured') ? 'class="featured"' : '';
-		
-		?>
-		
-		<li <?php echo $class; ?>>
-			<?php if( get_field('external_url') ) { ?>
-			<a href="<?php echo $url; ?>"><?php the_title(); ?> on YACHTWORLD </a>
-		<? } else { ?>
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-		<? }; ?>
-		
-		</li>
-	<?php endwhile; ?>
-	</ul>
-<?php endif; ?>
-
-<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 
 
 
