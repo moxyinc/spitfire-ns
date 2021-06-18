@@ -62,7 +62,7 @@ if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it i
 		?>
 		<?php if( get_field('external_url') ): ?>
 			<a href="<?php echo $url; ?>"><button class="bg-primary hover:bg-blue-500 text-sm xl:text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">FULL DETAILS</button></a>
-		<? endif; ?>
+		<?php endif; ?>
 		
 	</div>
 
