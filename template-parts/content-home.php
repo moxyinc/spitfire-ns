@@ -4,7 +4,7 @@
 <div id="main_content" class="container m-auto max-w-prose">
 	
 	<header class="entry-header mb-4">
-		<?php //the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1 text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1 text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header>
 	
 	<h1 class="text-ns-blue font-bold text-5xl">Current Listings</h1>
