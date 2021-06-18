@@ -409,7 +409,7 @@ body {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+  border-color: #e5e7eb; /* 2 */
 }
 
 /*
@@ -516,20 +516,11 @@ samp {
 }
 
 /**
- * 1. Make replaced elements `display: block` by default as that's
- *    the behavior you want almost all of the time. Inspired by
- *    CSS Remedy, with `svg` added as well.
+ * Make replaced elements `display: block` by default as that's
+ * the behavior you want almost all of the time. Inspired by
+ * CSS Remedy, with `svg` added as well.
  *
- *    https://github.com/mozdevs/cssremedy/issues/14
- * 
- * 2. Add `vertical-align: middle` to align replaced elements more
- *    sensibly by default when overriding `display` by adding a
- *    utility like `inline`.
- *
- *    This can trigger a poorly considered linting error in some
- *    tools but is included by design.
- * 
- *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ * https://github.com/mozdevs/cssremedy/issues/14
  */
 
 img,
@@ -540,8 +531,8 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
-  vertical-align: middle; /* 2 */
+  display: block;
+  vertical-align: middle;
 }
 
 /**
@@ -1256,10 +1247,6 @@ video {
 .text-secondary {
 	--tw-text-opacity: 1;
 	color: rgba(56, 174, 204, var(--tw-text-opacity));
-}
-.text-purple-900 {
-	--tw-text-opacity: 1;
-	color: rgba(76, 29, 149, var(--tw-text-opacity));
 }
 .antialiased {
 	-webkit-font-smoothing: antialiased;
