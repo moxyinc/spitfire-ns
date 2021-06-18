@@ -131,7 +131,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 	<div id="content" class="site-content flex-grow">
 
 		<!-- Start Front Page-Only Stuff -->
-		<?php if (is_front_page()): ?>
+<?php if (is_front_page()): ?>
 		
 	<section id="featured listings" class="-mt-10">
 		
@@ -294,12 +294,14 @@ Buy or sell your boat with an experienced professional guiding you through the e
 		
 		</div> <!-- end of #featured-listing-vesselss -->
 		
-		<?php endif; ?>
+<?php endif; ?>
 		<!-- End introduction -->
 			
 	</section><!-- /#featured-listings> -->
 
 		<?php do_action("tailpress_content_start"); ?>
+		
+		<h1>Hello, World</h1>
 
 		<main class="max-w-screen-lg xl:max-w-screen-xl mx-auto mt-6 px-0 sm:px-4 md:px-8 mb-14 sm:mb-20 xl:mb-12">
 
