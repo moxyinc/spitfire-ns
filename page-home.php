@@ -5,27 +5,61 @@
 <h1 class="text-ns-blue font-bold text-5xl mb-12">Current Listings</h1>
 
 
-
+<h2 class="text-2xl text-primary">North American Listings</h2>
 <?php 
 
 // query
 $the_query = new WP_Query(array(
 	'post_type'			=> 'listing',
 	'posts_per_page'	=> -1,
-	'meta_key'			=> 'featured',
+	'meta_key'			=> 'vessel_location',
+	'meta_value'        => 'north_america',
 	'orderby'			=> 'meta_value',
 	'order'				=> 'DESC'
 ));
 
 ?>
 <?php if( $the_query->have_posts() ): ?>
-	<ul>
+	<ul class="mt-3">
 	<?php while( $the_query->have_posts() ) : $the_query->the_post(); 
 		
-		$class = get_field('featured') ? 'class="featured font-bold"' : '';
+	
 		
 		?>
-		<li <?php echo $class; ?>>
+		<li class="font-extrabold">
+			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		</li>
+	<?php endwhile; ?>
+	</ul>
+<?php endif; ?>
+
+<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+
+
+
+
+<h2 class="text-2xl text-primary mt-6">Caribbean Listings</h2>
+<?php 
+
+// query
+$the_query = new WP_Query(array(
+	'post_type'			=> 'listing',
+	'posts_per_page'	=> -1,
+	'meta_key'			=> 'vessel_location',
+	'meta_value'        => 'caribbean',
+	'orderby'			=> 'meta_value',
+	'order'				=> 'DESC'
+));
+
+?>
+<?php if( $the_query->have_posts() ): ?>
+	<ul class="mt-3">
+	<?php while( $the_query->have_posts() ) : $the_query->the_post(); 
+		
+	
+		
+		?>
+		<li class="font-extrabold">
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</li>
 	<?php endwhile; ?>
