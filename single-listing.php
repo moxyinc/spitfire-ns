@@ -4,8 +4,9 @@
 
 <div id="full-grid" class="w-full grid grid-cols-12">
 	
-<?php $external = $_GET['template'];
-if(isset($external)) : ?><!-- check if ?template=external is in the URL, is it is - show this:-->
+<?php 
+$external = $_GET['template'];
+if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it is - show this:-->
 
 	<div class="container col-span-full  lg:col-span-10 lg:col-start-2 my-8 lg:pr-0">
 		
@@ -19,7 +20,7 @@ if(isset($external)) : ?><!-- check if ?template=external is in the URL, is it i
 
 
 
-<? else : ?>	<!-- ?template=external is NOT in the URL so here is the regular Listing template: -->
+<? } else { ?>	<!-- ?template=external is NOT in the URL so here is the regular Listing template: -->
 
 
 
@@ -68,7 +69,7 @@ if(isset($external)) : ?><!-- check if ?template=external is in the URL, is it i
 
 </div><!-- end #full-grid -->
 
-<?php endif ?><!-- end the ?external GET from the URL -->
+<?php } ?><!-- end the ?external GET from the URL -->
 
 
 
