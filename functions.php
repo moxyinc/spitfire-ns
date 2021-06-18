@@ -103,8 +103,8 @@ function tailpress_setup() {
 
 	// Adding Thumbnail basic support.
 	add_theme_support( 'post-thumbnails' );
-	//add_image_size( 'large', 700, 350, true );
-	add_image_size( 'featured', 700, 450, true );
+	add_image_size( 'large', 700, 350, true );
+	//add_image_size( 'featured', 700, 450, true );
 	
 	set_post_thumbnail_size( $width, $height, $crop );
 
