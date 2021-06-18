@@ -32,7 +32,7 @@ $the_query = new WP_Query(array(
 					<a href="<?php echo $url; ?>"><?php the_title(); ?></a>
 				<? } else { ?>
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				<? } ?>
+				<? }; ?>
 	
 			</li>
 	
