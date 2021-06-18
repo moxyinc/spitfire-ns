@@ -5,6 +5,10 @@
 </header>
 
 
+
+
+
+
 <?php 
 $arr_sliderimages = get_gallery_images();
 ?>	
@@ -62,11 +66,6 @@ $arr_sliderimages = get_gallery_images();
 
 
 
-
-
-
-
-
 <div class="entry-content">
 	<?php the_content(); ?>
 
@@ -84,5 +83,9 @@ $arr_sliderimages = get_gallery_images();
 	?>
 </div>
 
+
+
 </article>
+
+
 

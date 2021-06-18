@@ -1,19 +1,58 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
-<div class="container m-auto max-w-prose">
-<header class="entry-header mb-4">
-	<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1 text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-</header>
 
 
-<h1 class="text-ns-blue font-bold text-5xl">This Headline is Rendered in "ns-blue"</h1>
-<p class="mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem debitis vero qui fuga ex nihil pariatur adipisci nam animi porro asperiores dolore eveniet incidunt, id mollitia molestiae similique dolorum.
-</p>
+<div id="main_content" class="container m-auto max-w-prose">
+	
+	<header class="entry-header mb-4">
+		<?php //the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1 text-primary"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	</header>
+	
+	<h1 class="text-ns-blue font-bold text-5xl">Current Listings</h1>
+	
+	<?php 
+	
+		// query
+		$the_query = new WP_Query(array(
+			'post_type'			=> 'listing',
+			'posts_per_page'	=> -1
+		
+			
+		));
+	
+	?>
+	
+	<?php if( $the_query->have_posts() ): ?>
+	
+	<div id="current_listings" class="mt-6">
+	
+		<ul>
+		<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		<?php
+		$url = rtrim(get_permalink(),'/');
+		$url = $url . ('?template=external');
+		?>
+			
+			<li class="text-indigo-600">
+				
+				<?php if( get_field('external_url') ): ?>
+					<a href="<?php echo $url; ?>"><?php the_title(); ?></a>
+				<? else : ?>
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				<? endif; ?>
 
-<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</blockquote>
+			</li>
+			
+		<?php endwhile; ?>
+		</ul>
+		
+	</div>
+	
+	<?php endif; ?>
+	
+	<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+	
 
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia fugiat nisi culpa, corporis suscipit error neque eius cumque alias quibusdam quasi expedita ea repellendus ducimus dicta porro sit autem?</p>
-</div>
+</div><!-- end #main_content" container -->
 
 <?php if ( is_search() || is_archive() ) : ?>
 
