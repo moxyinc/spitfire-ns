@@ -69,7 +69,7 @@ if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it i
 
 </div><!-- end #full-grid -->
 
-<?php } ?><!-- end the ?external GET from the URL -->
+<?php } endif; ?><!-- end the ?external GET from the URL -->
 
 
 
