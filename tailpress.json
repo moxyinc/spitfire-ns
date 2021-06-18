@@ -6,7 +6,8 @@
         "light": "#F9FAFB",
         "teenee": "#FFC247",
         "pacific-blue": "#38AECC",
-        "black-coffee": "#483D3F"
+        "black-coffee": "#483D3F",
+        "ns-blue": "#336699"
     },
     "fontSizes": {
         "small": ["14px"],

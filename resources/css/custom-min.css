@@ -1,7 +1,7 @@
 .entry-content,
 .block-editor-block-list__layout {
       h1 {
-        @apply text-2xl;
+        @apply text-3xl;
       }
     
       h2 {
@@ -28,7 +28,7 @@
     
       ul {
         li {
-          @apply list-disc list-inside;
+          @apply list-disc list-outside ml-6 mb-2;
         }
       }
     
@@ -69,7 +69,7 @@ h4 {
 }
 
 header#masthead div#hero-image {
-  background-image: url("http://moxy.local:5757/wp-content/themes/spitfire/resources/img/boat-detail-1440x533.jpg");
+  background-image: url("https://northsouth.tempurl.host/wp-content/uploads/2021/06/boat-detail-1440x533-1.jpg");
 }
 
 @media only screen and (max-width: 767px) {

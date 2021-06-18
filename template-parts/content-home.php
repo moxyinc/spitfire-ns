@@ -5,7 +5,7 @@
 </header>
 
 
-<h1 class="text-indigo-300 font-bold text-4xl underline">This Is the New Text for Spitfire-NS</h1>
+<h1 class="text-ns-blue font-bold text-5xl">This Headline is Rendered in "ns-blue"</h1>
 <p class="mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem debitis vero qui fuga ex nihil pariatur adipisci nam animi porro asperiores dolore eveniet incidunt, id mollitia molestiae similique dolorum.
 </p>
 
