@@ -5,7 +5,7 @@
 </header>
 
 
-<p class="text-yellow-900 ">
+<p class="text-red-900 ">
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde voluptatem debitis vero qui fuga ex nihil pariatur adipisci nam animi porro asperiores dolore eveniet incidunt, id mollitia molestiae similique dolorum.
 </p>
 
