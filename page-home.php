@@ -28,11 +28,11 @@ $the_query = new WP_Query(array(
 
 		<li class="text-indigo-600">
 
-			<?php if( get_field('external_url') ): ?>
+			<?php //if( get_field('external_url') ): ?>
 				<a href="<?php echo $url; ?>"><?php the_title(); ?></a>
-			<? else : ?>
+			<? //else : ?>
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			<? endif; ?>
+			<? //endif; ?>
 
 		</li>
 
