@@ -22,6 +22,7 @@
 	?>
 	
 	
+	
 	<?php if( $the_query->have_posts() ): ?>
 	
 	<div id="current_listings" class="mt-6">
