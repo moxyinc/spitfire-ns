@@ -142,8 +142,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 		
 		<h1 class="text-center w-screen pt-9 text-primary sm:text-3xl lg:text-4xl bg-blue-100 uppercase">Featured Listings</h1>
 		
-		<h1 class="text-teenee text-3xl text-center w-screen">Hello, World</h1>
-		<p class="first-letter:text-8xl first-letter:font-bold first-letter:float-left first-letter:text-teenee  max-w-prose mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
 
 		
 		<div id="featured-listings-vessels" class="flex flex-wrap justify-center bg-blue-100 lg:px-8">
