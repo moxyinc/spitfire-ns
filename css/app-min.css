@@ -1463,6 +1463,10 @@ header#masthead div#hero-image {
 	--tw-text-opacity: 1;
 	color: rgba(3, 96, 203, var(--tw-text-opacity));
 }
+.first-letter\:text-teenee::first-letter {
+	--tw-text-opacity: 1;
+	color: rgba(255, 194, 71, var(--tw-text-opacity));
+}
 .hover\:border-transparent:hover {
 	border-color: transparent;
 }
