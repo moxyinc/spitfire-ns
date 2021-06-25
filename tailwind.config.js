@@ -6,7 +6,20 @@ module.exports = {
   mode: "jit",
   tailpress,
   purge: {
-    content: ["./*.php", "./*/*.php", "./safelist.txt"],
+    content: [
+        './template-parts/*.php',
+        './resources/css/*.css',
+        './resources/js/*.js',
+        './comments.php',
+        './header.php',
+        './footer.php',
+        './single.php',
+        './index.php',
+        './page.php',
+        './page-*.php',
+        './404.php',
+        './safelist.txt'
+      ],
   },
   theme: {
     container: {
