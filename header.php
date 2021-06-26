@@ -140,7 +140,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 		
 		
 		
-		<h1 class="text-center w-screen pt-9 text-red-900 sm:text-3xl lg:text-4xl bg-blue-100 uppercase">Featured Listings</h1>
+		<h2 class="text-center w-screen pt-9 text-2xl text-primary sm:text-3xl lg:text-4xl bg-blue-100 uppercase">Featured Listings</h2>
 		
 		
 		<div id="featured-listings-vessels" class="flex flex-wrap justify-center bg-blue-100 lg:px-8">
