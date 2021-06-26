@@ -330,6 +330,9 @@
 .border {
       border-width: 1px;
 }
+.border-2 {
+      border-width: 2px;
+}
 .border-t-8 {
       border-top-width: 8px;
 }
@@ -350,6 +353,10 @@
 .border-primary {
       --tw-border-opacity: 1;
       border-color: rgba(3, 96, 203, var(--tw-border-opacity));
+}
+.border-red-900 {
+      --tw-border-opacity: 1;
+      border-color: rgba(127, 29, 29, var(--tw-border-opacity));
 }
 .bg-primary {
       --tw-bg-opacity: 1;
@@ -878,6 +885,10 @@ header#masthead div#hero-image {
       .sm\:mb-20 {
             margin-bottom: 5rem;
       }
+      .sm\:justify-around {
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+      }
       .sm\:px-4 {
             padding-left: 1rem;
             padding-right: 1rem;
@@ -925,6 +936,13 @@ header#masthead div#hero-image {
       .md\:flex-shrink-0 {
             -webkit-flex-shrink: 0;
             flex-shrink: 0;
+      }
+      .md\:justify-around {
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+      }
+      .md\:border-solid {
+            border-style: solid;
       }
       .md\:py-3 {
             padding-top: 0.75rem;
@@ -984,6 +1002,12 @@ header#masthead div#hero-image {
       .lg\:max-w-md {
             max-width: 28rem;
       }
+      .lg\:max-w-xl {
+            max-width: 36rem;
+      }
+      .lg\:max-w-sm {
+            max-width: 24rem;
+      }
       .lg\:justify-around {
             -webkit-justify-content: space-around;
             justify-content: space-around;
@@ -991,6 +1015,9 @@ header#masthead div#hero-image {
       .lg\:rounded-b-lg {
             border-bottom-right-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
+      }
+      .lg\:border-solid {
+            border-style: solid;
       }
       .lg\:bg-white {
             --tw-bg-opacity: 1;
@@ -1033,9 +1060,24 @@ header#masthead div#hero-image {
       .xl\:max-w-screen-xl {
             max-width: 1280px;
       }
+      .xl\:border-solid {
+            border-style: solid;
+      }
       .xl\:px-32 {
             padding-left: 8rem;
             padding-right: 8rem;
+      }
+      .xl\:px-24 {
+            padding-left: 6rem;
+            padding-right: 6rem;
+      }
+      .xl\:px-20 {
+            padding-left: 5rem;
+            padding-right: 5rem;
+      }
+      .xl\:px-16 {
+            padding-left: 4rem;
+            padding-right: 4rem;
       }
       .xl\:text-lg {
             font-size: 1.125rem;
@@ -1043,6 +1085,9 @@ header#masthead div#hero-image {
       }
 }
 @media (min-width: 1536px) {
+      .\32xl\:border-solid {
+            border-style: solid;
+      }
       .\32xl\:text-5xl {
             font-size: 3rem;
             line-height: 1;

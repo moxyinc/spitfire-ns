@@ -103,11 +103,11 @@
 
 <section class="z-20 w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
 	
-	<div class="container mx-auto flex flex-wrap justify-center lg:justify-around items-center my-6 xl:px-32 lg:xl-0">
+	<div class="container mx-auto flex flex-wrap md:justify-around justify-center items-center my-6 xl:px-16 3xl:px-32">
 	
 		<a href="#" alt="Featured Listings" class="text-blue-500 text-lg"><button class="bg-primary hover:bg-blue-500 text-sm xl:text-lg text-white font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">Featured Listings</button></a>
 	
-		<div id="contact-info" class=" max-w-prose text-dark pl-6 py-4 z-10 ">
+		<div id="contact-info" class="max-w-prose text-dark pl-6 py-4 z-10 ">
 			<?php if (is_front_page()): ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/cpyb-moxy-105x75.png" alt="CPYB Logo" class="float-right ml-6 opacity-90 hover:opacity-100" width="105" height="75" />
 				<p class="z-10 mb-2 font-serif italic font-maple text-right"><strong>North South Yacht Sales</strong> is a Certified Professional Yacht Broker (CPYB) Endorsed Brokerage.
@@ -136,9 +136,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 
 		
 	<section id="featured listings" class="-mt-10">
-		
-		
-		
+	
 		
 		<h2 class="text-center w-screen pt-9 text-2xl text-primary sm:text-3xl lg:text-4xl bg-blue-100 uppercase">Featured Listings</h2>
 		
