@@ -26,7 +26,7 @@
 <header id="masthead" class="relative w-screen">
 	<div id="hero-image" class="w-screen hero-image bg-cover bg-right-top bg-no-repeat flex flex-wrap">
 		<div class="z-10 w-full border-solid border-t-8 border-blue-300">
-			<div class="flex flex-wrap justify-between">
+			<div class="flex flex-wrap justify-between sm:mt-3 md:lg-9 pb-2 lg:min-h-full">
 				
 				<div id="logo-container" class="w-72 max-w-xs mt-9 md:w-1/3 md:mx-9  md:w-1/3 md:max-w-lg lg:mx-14">
 				  <?php if (has_custom_logo()) { ?>
@@ -56,12 +56,28 @@
 					 </a>
 				 </div>	
 				 
-				 <div id="featured-callout" class="p-6 lg:mt-10 lg:mr-8 text-dark bg-white bg-opacity-50 lg:max-w-md hidden md:block font-maple">
+			
+				 
+			<?php if ( get_field( 'active', 'option' ) == 1 ) : ?>
+			
+				
+				
+				 <div id="featured-callout" class="p-6 lg:mt-10 lg:mr-8 text-dark bg-white bg-opacity-50 shadow-lg lg:max-w-md hidden md:block font-maple">
+					 
+					 <?php $header_announcement_thumbnail = get_field( 'header_announcement_thumbnail', 'option' ); ?>
+					 <?php if ( $header_announcement_thumbnail ) : ?>
+						 <img src="<?php echo esc_url( $header_announcement_thumbnail['url'] ); ?>" alt="<?php echo esc_attr( $header_announcement_thumbnail['alt'] ); ?>" class="float-left mr-2 max-h-32" />
+					 <?php endif; ?>
+					 
 					<h2 class="text-lg font-maple font-bold text-primary"><?php the_field( 'header_announcement_title', 'option' ); ?></h2>
 					<div class="text-primary"><?php the_field( 'header_announcement_text', 'option' ); ?></div>
 					<a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs mt-3 float-right"><button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">More Info</button></a>
 					
 				 </div><!-- /.featured-callout -->	
+			<?php  // echo 'true'; ?>
+			<?php else : ?>
+			 <?php // echo 'false'; ?>
+			<?php endif; ?>		 
 					  
 				<div class="z-10 w-full p-4 w-full text-dark md:text-white lg:rounded-b-lg md:text-right md:pr-20 flex justify-end hidden lg:block ">
 					<h3 class="font-serif italic text text-dark md:text-white sm:text-shadow"><strong>Eight Locations to Serve You:</strong><br />
@@ -81,12 +97,29 @@
 					]); ?>
 				 </div>
 				 
+				 <?php if ( get_field( 'active', 'option' ) == 1 ) : ?>
+				 
+				
+				 
 				 <div id="featured-callout" class="p-6 lg:mt-10 lg:mr-8 text-dark bg-blue-400 bg-opacity-10 lg:max-w-md md:hidden">
+					 
+					 <?php $header_announcement_thumbnail = get_field( 'header_announcement_thumbnail', 'option' ); ?>
+					  <?php if ( $header_announcement_thumbnail ) : ?>
+						  <img src="<?php echo esc_url( $header_announcement_thumbnail['url'] ); ?>" alt="<?php echo esc_attr( $header_announcement_thumbnail['alt'] ); ?>" class="mx-auto text-center" />
+					  <?php endif; ?>
+					 
 					 <h2 class="text-lg"><?php the_field( 'header_announcement_title', 'option' ); ?></h2>
 					 <?php the_field( 'header_announcement_text', 'option' ); ?>
 					 <a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs -ml-3"><button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 my-3 border border-blue-500 hover:border-transparent rounded">More Info</button></a>
 					 <p><a href="#">Featured Link for More Info</a>
 				 </div><!-- /.featured-callout -->
+				<?php  // echo 'true'; ?>
+				<?php else : ?>
+				 <?php // echo 'false'; ?>
+				<?php endif; ?>		 
+			
+					 
+					 
 			</div>
 		</div>
 	</div><!-- /#her-image sction -->
