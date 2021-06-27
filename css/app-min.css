@@ -1687,6 +1687,10 @@ header#masthead div#hero-image {
 	--tw-text-opacity: 1;
 	color: rgba(249, 250, 251, var(--tw-text-opacity));
 }
+.hover\:text-dark:hover {
+	--tw-text-opacity: 1;
+	color: rgba(38, 34, 97, var(--tw-text-opacity));
+}
 .hover\:underline:hover {
 	text-decoration: underline;
 }

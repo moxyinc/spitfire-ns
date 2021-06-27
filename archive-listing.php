@@ -10,7 +10,7 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
 		
 		<header class="entry-header mb-4">
-			<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-1 text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			
 		</header>
 		
 		<?php $title = get_the_title(); 
@@ -30,7 +30,8 @@
 						<!-- <img class="w-full hover:animate-bounce rounded-lg" src="https://www.riautelevisi.com/foto_berita/77foto%20ilustrasi.jpg" alt="" /> -->
 					</div>
 					<div class="flex flex-col w-3/4 pl-4">
-						<p class="text-2xl font-black mb-2 text-primary"><?php echo $title; ?></p>
+					
+						<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-2 text-primary hover:text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 						
 						<div class="entry-summary text-lg font-light leading-5 text-brand">
 							<?php the_excerpt(); ?>
