@@ -23,9 +23,7 @@ if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it i
 <?php } else { ?>	<!-- ?template=external is NOT in the URL so here is the regular Listing template: -->
 
 
-
-
-	<div class="container col-span-full  lg:col-span-7 lg:col-start-2 my-8 lg:pr-9">
+	<div class="container col-span-full  lg:col-span-7 lg:col-start-2 my-8 lg:pr-9 border-solid">
 
 	<?php if ( have_posts() ) : ?>
 	

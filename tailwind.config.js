@@ -17,6 +17,8 @@ module.exports = {
         './index.php',
         './page.php',
         './page-*.php',
+        './archive.php',
+        './archive-*.php',
         './404.php',
         './safelist.txt'
       ],
