@@ -71,7 +71,22 @@
 					 
 					<h2 class="text-lg font-maple font-bold text-primary"><?php the_field( 'header_announcement_title', 'option' ); ?></h2>
 					<div class="text-primary"><?php the_field( 'header_announcement_text', 'option' ); ?></div>
-					<a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs mt-3 float-right"><button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">More Info</button></a>
+					
+					
+				<?php $header_announcement_link = get_field(  'header_annnouncement_link', 'option' ); ?>
+				 <?php if ( $header_announcement_link ) : ?>
+					<div class="flex justify-end align-bottom">
+						
+						<a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs mt-3"
+						<?php if ( get_field( 'header_announcement_link_new_tab', 'option' ) == 1 ) : ?>target="_blank"<?php endif; ?>>
+							<button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">More&nbsp;Info</button>
+						</a>
+						<?php if ( get_field( 'header_announcement_link_new_tab', 'option' ) == 1 ) : ?><p class="text-xs text-primary italic flex mt-5 ml-2">(opens in new tab)</p><?php endif; ?>
+					</div>
+				<?php endif; ?>
+				
+				
+					
 					
 				 </div><!-- /.featured-callout -->	
 			<?php  // echo 'true'; ?>
@@ -110,8 +125,10 @@
 					 
 					 <h2 class="text-lg"><?php the_field( 'header_announcement_title', 'option' ); ?></h2>
 					 <?php the_field( 'header_announcement_text', 'option' ); ?>
-					 <a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs -ml-3"><button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 my-3 border border-blue-500 hover:border-transparent rounded">More Info</button></a>
-					 <p><a href="#">Featured Link for More Info</a>
+					 <a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs mt-3 float-right"
+					 <?php if ( get_field( 'header_announcement_link_new_tab', 'option' ) == 1 ) : ?>target="_blank"<?php endif; ?>>
+						 <button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">More Info</button>
+					 </a>
 				 </div><!-- /.featured-callout -->
 				<?php  // echo 'true'; ?>
 				<?php else : ?>

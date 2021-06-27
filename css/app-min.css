@@ -755,6 +755,15 @@ video {
 .mr-2 {
 	margin-right: 0.5rem;
 }
+.mt-5 {
+	margin-top: 1.25rem;
+}
+.mr-3 {
+	margin-right: 0.75rem;
+}
+.ml-2 {
+	margin-left: 0.5rem;
+}
 .block {
 	display: block;
 }
@@ -1161,6 +1170,9 @@ video {
 .pb-2 {
 	padding-bottom: 0.5rem;
 }
+.pr-3 {
+	padding-right: 0.75rem;
+}
 .text-center {
 	text-align: center;
 }
@@ -1169,6 +1181,9 @@ video {
 }
 .text-left {
 	text-align: left;
+}
+.align-bottom {
+	vertical-align: bottom;
 }
 .font-maple {
 	font-family: maple-web, sans-serif;
