@@ -75,7 +75,7 @@
 										<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-2 text-primary hover:text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 										<h2 class="text-secondary text-xl italic"><?php if (get_field('callout')) { the_field( 'callout' ); } ?></span></h2> 
 										
-										<div class="entry-summary leading-6 text-brand">
+										<div class="entry-summary leading-5 text-brand">
 											<?php the_excerpt(); ?>
 										</div> <!-- Excerpt / Post Content -->
 											
@@ -227,18 +227,18 @@
 						
 						<div class="flex w-full mx-auto items-center">
 							<div class="flex w-full bg-blue-50 p-4 rounded-lg">
-								<div class="w-1/4">
+								<div class="w-3/12">
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 										<?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
 									</a>
 									<!-- <img class="w-full hover:animate-bounce rounded-lg" src="https://www.riautelevisi.com/foto_berita/77foto%20ilustrasi.jpg" alt="" /> -->
 								</div>
-								<div class="flex flex-col w-3/4 pl-4">
+								<div class="flex flex-col w-6/12 pl-4">
 								
 									<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-2 text-primary hover:text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 									<h2 class="text-secondary text-xl italic"><?php if (get_field('callout')) { the_field( 'callout' ); } ?></span></h2> 
 									
-									<div class="entry-summary text-lg font-light leading-5 text-brand">
+									<div class="entry-summary leading-5 text-brand">
 										<?php the_excerpt(); ?>
 									</div> <!-- Excerpt / Post Content -->
 										
