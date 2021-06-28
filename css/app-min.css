@@ -871,6 +871,9 @@ video {
 .w-80 {
 	width: 20rem;
 }
+.min-w-full {
+	min-width: 100%;
+}
 .max-w-sm {
 	max-width: 24rem;
 }
@@ -1342,6 +1345,10 @@ video {
 .text-3xl {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
+}
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 .font-light {
 	font-weight: 300;

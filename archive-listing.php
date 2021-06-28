@@ -62,7 +62,7 @@
 						<?php if ( is_search() || is_archive() ) : ?>
 							
 							<div class="flex w-full mx-auto items-center">
-								<div class="flex bg-blue-50 p-4 rounded-lg">
+								<div class="flex w-full bg-blue-50 p-4 rounded-lg">
 									<div class="w-1/4">
 										 <?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
 										<!-- <img class="w-full hover:animate-bounce rounded-lg" src="https://www.riautelevisi.com/foto_berita/77foto%20ilustrasi.jpg" alt="" /> -->
@@ -70,6 +70,7 @@
 									<div class="flex flex-col w-3/4 pl-4">
 									
 										<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-2 text-primary hover:text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+										<h2 class="text-secondary text-xl italic"><?php if (get_field('callout')) { the_field( 'callout' ); } ?></span></h2> 
 										
 										<div class="entry-summary text-lg font-light leading-5 text-brand">
 											<?php the_excerpt(); ?>
@@ -168,7 +169,7 @@
 					<?php if ( is_search() || is_archive() ) : ?>
 						
 						<div class="flex w-full mx-auto items-center">
-							<div class="flex bg-blue-50 p-4 rounded-lg">
+							<div class="flex w-full bg-blue-50 p-4 rounded-lg">
 								<div class="w-1/4">
 									 <?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
 									<!-- <img class="w-full hover:animate-bounce rounded-lg" src="https://www.riautelevisi.com/foto_berita/77foto%20ilustrasi.jpg" alt="" /> -->
@@ -176,6 +177,7 @@
 								<div class="flex flex-col w-3/4 pl-4">
 								
 									<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-2 text-primary hover:text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+									<h2 class="text-secondary text-xl italic"><?php if (get_field('callout')) { the_field( 'callout' ); } ?></span></h2> 
 									
 									<div class="entry-summary text-lg font-light leading-5 text-brand">
 										<?php the_excerpt(); ?>

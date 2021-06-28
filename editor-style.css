@@ -263,6 +263,9 @@
 .w-80 {
       width: 20rem;
 }
+.min-w-full {
+      min-width: 100%;
+}
 .max-w-xs {
       max-width: 20rem;
 }
@@ -650,6 +653,10 @@
 .text-5xl {
       font-size: 3rem;
       line-height: 1;
+}
+.text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
 }
 .font-bold {
       font-weight: 700;
