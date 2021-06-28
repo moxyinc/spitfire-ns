@@ -64,7 +64,9 @@
 							<div class="flex w-full mx-auto items-center">
 								<div class="flex w-full bg-blue-50 p-4 rounded-lg">
 									<div class="w-1/4">
-										 <?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
+										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+											 <?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
+										</a>
 										<!-- <img class="w-full hover:animate-bounce rounded-lg" src="https://www.riautelevisi.com/foto_berita/77foto%20ilustrasi.jpg" alt="" /> -->
 									</div>
 									<div class="flex flex-col w-3/4 pl-4">
@@ -171,7 +173,9 @@
 						<div class="flex w-full mx-auto items-center">
 							<div class="flex w-full bg-blue-50 p-4 rounded-lg">
 								<div class="w-1/4">
-									 <?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+										<?php the_post_thumbnail('medium', array('class' => 'rounded-md ')); ?>
+									</a>
 									<!-- <img class="w-full hover:animate-bounce rounded-lg" src="https://www.riautelevisi.com/foto_berita/77foto%20ilustrasi.jpg" alt="" /> -->
 								</div>
 								<div class="flex flex-col w-3/4 pl-4">
