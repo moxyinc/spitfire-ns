@@ -10,9 +10,6 @@
 
 
 
-
-
-
 <?php 
 $arr_sliderimages = get_gallery_images();
 ?>	

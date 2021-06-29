@@ -10,6 +10,8 @@
 	
 	<link rel="stylesheet" href="https://use.typekit.net/qfi5grs.css">
 	
+
+	
 	<?php wp_head(); ?>
 </head>
 
@@ -175,12 +177,6 @@ Buy or sell your boat with an experienced professional guiding you through the e
 
 
 
-
-
-
-
-	
-
 	<div id="content" class="site-content flex-grow">
 
 		<!-- Start Front Page-Only Stuff -->
@@ -231,7 +227,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 			
 			
 				
-			<div class="px-5 py-8 md:max-w-sm mt-6">
+			<div class="px-5 py-8 md:max-w-sm mt-6 scroll-show">
 				<div class="bg-white shadow-2xl rounded-lg mb-6 tracking-wide" >
 					<div class="md:flex-shrink-0">
 					

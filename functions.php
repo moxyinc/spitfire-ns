@@ -41,7 +41,7 @@ function tailpress_get_mix_compiled_asset_url( $path ) {
 }
 
 
-// added by Moxy for Flexslider
+// added by Moxy for Flexslider, animasection animations js
 add_action( 'wp_enqueue_scripts', 'moxy_scripts_load' );
 function moxy_scripts_load(){
   wp_enqueue_script( 'flexslider', get_stylesheet_directory_uri() . '/js/jquery.flexslider.js', array( 'jquery' ) );
@@ -49,6 +49,9 @@ function moxy_scripts_load(){
   
   wp_enqueue_script( 'prettyPhoto', get_stylesheet_directory_uri() . '/js/jquery.prettyPhoto.js', array( 'jquery' ) );
   wp_enqueue_style( 'prettyPhoto', get_stylesheet_directory_uri() . '/css/prettyPhoto.css', array(), '', 'screen' );
+  
+  //wp_enqueue_script( 'animasection', get_stylesheet_directory_uri() . '/js/animasection.js', array( '' ) );
+  
 }
 // end added by Moxy
 

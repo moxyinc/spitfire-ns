@@ -8,6 +8,7 @@ module.exports = {
   purge: {
     content: [
         './template-parts/*.php',
+        './template-parts/content-single_listing.php',
         './resources/css/*.css',
         './resources/js/*.js',
         './comments.php',
@@ -34,6 +35,16 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        fadeIn: "fadeIn 500ms ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        },
+      animation: ["motion-safe"]
+      },
       colors: tailpress.colors,
       fontFamily: {
         headline: ["Oswald", "sans-serif"],

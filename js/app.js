@@ -18,7 +18,27 @@
 //     main_navigation.slideToggle();
 //   });
 // });
-// Navigation toggle
+jQuery(document).ready(function () {
+  var callback = function callback(entries) {
+    entries.forEach(function (entry) {
+      console.log(entry);
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fadeIn");
+      } else {
+        entry.target.classList.remove("animate-fadeIn");
+      }
+    });
+  };
+
+  var observer = new IntersectionObserver(callback);
+  var targets = document.querySelectorAll(".scroll-show");
+  targets.forEach(function (target) {
+    target.classList.add("opacity-0");
+    observer.observe(target);
+  });
+}); // Navigation toggle
+
 jQuery(document).ready(function () {
   var main_navigation = jQuery("#primary-menu");
   var hamburger = jQuery(".c-hamburger");

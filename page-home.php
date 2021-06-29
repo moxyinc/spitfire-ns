@@ -1,10 +1,13 @@
 <?php /* Template Name: Homepage */ ?>
 <?php get_header(); ?>
 
-<div class="block">
-	
+
+
+<div class="block scroll-show">
+
 	<div id="news-and-listings" class="row lg:flex lg:flex-wrap">
 		
+
 		<div class="w-full lg:w-1/2 bg-gray-100 p-6">
 		
 			<div class="flex flex-wrap">		

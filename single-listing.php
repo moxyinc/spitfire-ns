@@ -2,7 +2,8 @@
 
 <?php get_header(); ?>
 
-<div id="full-grid" class="flex md:flex-nowrap md:mx-32">
+<div id="full-grid" class="flex flex-wrap row">
+
 	
 <?php 
 $external = $_GET['template'];
@@ -19,7 +20,7 @@ if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it i
 <?php } else { ?>	<!-- ?template=external is NOT in the URL so here is the regular Listing template: -->
 
 
-	<div class="lg:w-2/3  lg:pr-9">
+	<div class="lg:w-2/3 lg:pl-24  lg:pr-9">
 
 	<?php if ( have_posts() ) : ?>
 	
@@ -37,7 +38,7 @@ if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it i
 	</div>
 	
 	
-	<div id="sidebar" class="lg:my-8 lg:mt-28">
+	<div id="sidebar" class="lg:w-1/3 lg:my-8 lg:mt-28">
 		
 		<?php get_sidebar('listing') ?>
 		

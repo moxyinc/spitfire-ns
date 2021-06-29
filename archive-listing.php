@@ -41,12 +41,12 @@
 				
 				?>
 				<?php if( $the_query->have_posts() ): ?>
-					<ul class="mt-3">
+					<div class="mt-3">
 					<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						
 						
 						
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12 scroll-show' ); ?>>
 						
 						<header class="entry-header mb-4">
 							
@@ -181,7 +181,7 @@
 						
 						
 					<?php endwhile; ?>
-					</ul>
+					</div>
 				<?php endif; ?>
 				
 				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
@@ -206,11 +206,11 @@
 				
 				?>
 				<?php if( $the_query->have_posts() ): ?>
-					<ul class="mt-3">
+					<div class="mt-3">
 					<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						
 						
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12 scroll-show' ); ?>>
 					
 					<header class="entry-header mb-4">
 						
@@ -343,7 +343,7 @@
 						
 						
 					<?php endwhile; ?>
-					</ul>
+					</div>
 				<?php endif; ?>
 				
 				<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
