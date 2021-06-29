@@ -33,6 +33,7 @@
 		"tailwindcss": "^2.2.4"
 	},
 	"dependencies": {
-		"@tailwindcss/typography": "^0.4.1"
+		"@tailwindcss/typography": "^0.4.1",
+		"tailwindcss-delicious-hamburgers": "^1.0.2"
 	}
 }

@@ -10,7 +10,7 @@
 	
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 	
-	<div class="flex justify-center items-center">
+	<div class="row flex justify-center items-center">
 		<!--actual component start-->
 		<div x-data="setup()">
 			<ul class="flex justify-center items-center my-4">

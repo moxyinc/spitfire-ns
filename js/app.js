@@ -8,12 +8,24 @@
 /***/ (() => {
 
 // Navigation toggle
+// jQuery(document).ready(function () {
+//   const main_navigation = jQuery("#primary-menu");
+// 
+//   jQuery("#primary-menu-toggle").on("click", function (e) {
+//     e.preventDefault();
+// 
+//     //main_navigation.toggleClass('hidden');
+//     main_navigation.slideToggle();
+//   });
+// });
+// Navigation toggle
 jQuery(document).ready(function () {
   var main_navigation = jQuery("#primary-menu");
+  var hamburger = jQuery(".c-hamburger");
   jQuery("#primary-menu-toggle").on("click", function (e) {
-    e.preventDefault(); //main_navigation.toggleClass('hidden');
-
+    e.preventDefault();
     main_navigation.slideToggle();
+    hamburger.toggleClass("active");
   });
 }); //jQuery("a[rel^='prettyPhoto']").prettyPhoto();
 

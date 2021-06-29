@@ -14,8 +14,10 @@ module.exports = {
         './header.php',
         './footer.php',
         './single.php',
+        './single-listing.php',
         './index.php',
         './page.php',
+        './page-home.php',
         './page-*.php',
         './archive.php',
         './archive-*.php',
@@ -40,9 +42,17 @@ module.exports = {
         maple: ["maple-web", "sans-serif"],
       },
     },
+    deliciousHamburgers: {
+      size: '40px', // must be in px.
+      color: '#262261',
+      colorLight: '#fff8f4',
+      padding: '0px', // must be in px.
+      animationSpeed: 1,
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwindcss-delicious-hamburgers'),
     plugin(function ({
       addUtilities,
       addComponents,

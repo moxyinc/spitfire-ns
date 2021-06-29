@@ -39,7 +39,12 @@
       }
 }
 
-
+.block {
+  @apply w-screen mx-auto;
+}
+.row {
+  @apply container mx-auto py-6 xl:px-24;
+}
 
 h1,
 h2,

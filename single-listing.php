@@ -2,28 +2,24 @@
 
 <?php get_header(); ?>
 
-<div id="full-grid" class="w-full grid grid-cols-12">
+<div id="full-grid" class="flex md:flex-nowrap md:mx-32">
 	
 <?php 
 $external = $_GET['template'];
 if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it is - show this:-->
 
-	<div class="container col-span-full  lg:col-span-10 lg:col-start-2 my-8 lg:pr-0">
+	<div class="container row">
 		
 		<iframe id="advanced_iframe" name="advanced_iframe" src="<?php the_field( 'external_url' ); ?>" scrolling="auto" allowtransparency="true" style="width: 100%; height: 3000px; max-width: 100%; max-height: 48640px;" onload=";aiScrollToTop(&quot;advanced_iframe&quot;,&quot;true&quot;);" width="100%" height="4000" frameborder="0"></iframe>
 		
 	</div>
 	
-	<!-- <div id="sidebar" class="container col-span-full lg:col-span-2 lg:my-8 lg:mt-28">
-		<?php //get_sidebar('listing') ?>
-	</div> -->	
-
 
 
 <?php } else { ?>	<!-- ?template=external is NOT in the URL so here is the regular Listing template: -->
 
 
-	<div class="container col-span-full  lg:col-span-7 lg:col-start-2 my-8 lg:pr-9 border-solid">
+	<div class="lg:w-2/3  lg:pr-9">
 
 	<?php if ( have_posts() ) : ?>
 	
@@ -41,7 +37,7 @@ if(isset($external)) { ?><!-- check if ?template=external is in the URL, is it i
 	</div>
 	
 	
-	<div id="sidebar" class="container col-span-full lg:col-span-3 lg:my-8 lg:mt-28">
+	<div id="sidebar" class="lg:my-8 lg:mt-28">
 		
 		<?php get_sidebar('listing') ?>
 		

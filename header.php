@@ -19,6 +19,7 @@
 
 
 
+
 <div id="page" class="min-h-screen flex flex-col  mx-auto">
 
 	<?php do_action("tailpress_header"); ?>
@@ -26,43 +27,53 @@
 <header id="masthead" class="relative w-screen">
 	<div id="hero-image" class="w-screen hero-image bg-cover bg-right-top bg-no-repeat flex flex-wrap">
 		<div class="z-10 w-full border-solid border-t-8 border-blue-300">
-			<div class="flex flex-wrap justify-between sm:mt-3 md:lg-9 pb-2 lg:min-h-full">
+			
+			<div id="logo-hamburger-container" class="flex flex-wrap justify-between sm:mt-3 md:lg-9 pb-2 lg:min-h-full">
 				
-				<div id="logo-container" class="w-72 max-w-xs mt-9 md:w-1/3 md:mx-9  md:w-1/3 md:max-w-lg lg:mx-14">
-				  <?php if (has_custom_logo()) { ?>
+				<div id="logo-container" class="lg:w-96 lg:ml-24 lg:mt-6">
+					<?php if (has_custom_logo()) { ?>
 					  <a href="<?php echo get_bloginfo("url"); ?>">
 						  <?php the_custom_logo(); ?>
 					  </a>
-				  <?php } else { ?>
+					<?php } else { ?>
 					  <a href="<?php echo get_bloginfo("url"); ?>">
-						  <img src="<?php echo get_template_directory_uri(); ?>/resources/svg/northsouth-logo.svg" alt="Moxy Logo">
+						  <img src="<?php echo get_template_directory_uri(); ?>/resources/svg/northsouth-logo.svg" alt="Moxy Logo" class="w-64 lg:w-96">
 					  </a>
-				  <?php } ?>
-				  
+					<?php } ?>
+					  
 				</div>
 				
-				<div id="hamburger-container" class="lg:hidden z-10 m-3">
+				
+				<div id="hamburger-container" class="lg:hidden absolute right-10 top-4">
 					 <a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-						 <div x-data="{ open: false }">
-							 <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white" @click="open = !open">
-								 <span class="sr-only">Open main menu</span>
-								 <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-									 <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-									 <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-									 <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-								 </div>
-							 </button>
-						 </div>
+ 						<button class="c-hamburger c-hamburger--criss-cross">
+							 <span class="sr-only">Open main menu</span>
+							   <div class="c-hamburger-inner">
+								 <span class="c-hamburger-bar"></span>
+								 <span class="c-hamburger-bar"></span>
+								 <span class="c-hamburger-bar"></span>
+							   </div>
+						</button>		
 					 </a>
 				 </div>	
+				
+				<div class="lg:hidden">
+					<?php wp_nav_menu([
+						"container_id" => "primary-menu",
+						"container_class" => 
+						"hidden lg:block mt-4 p-4  lg:text-primary font-extrabold lg:mt-0 lg:p-0 lg:bg-transparent lg:block bg-white bg-opacity-60",
+						"menu_class" => "lg:flex lg:mx-4",
+						"theme_location" => "primary",
+						"li_class" => "lg:mx-2 py-1 md:py-3 px-2 hover:bg-blue-200",
+						"fallback_cb" => false,
+					]); ?>
+				 </div>
 				 
-			
+		
 				 
 			<?php if ( get_field( 'active', 'option' ) == 1 ) : ?>
 			
-				
-				
-				 <div id="featured-callout" class="p-6 lg:mt-10 lg:mr-8 text-dark bg-white bg-opacity-50 shadow-lg lg:max-w-md hidden md:block font-maple">
+				 <div id="featured-callout" class="p-6 bg-white bg-opacity-50 shadow-lg lg:mt-0 lg:mr-12 text-dark  xl:max-w-md md:block font-maple">
 					 
 					 <?php $header_announcement_thumbnail = get_field( 'header_announcement_thumbnail', 'option' ); ?>
 					 <?php if ( $header_announcement_thumbnail ) : ?>
@@ -85,15 +96,12 @@
 					</div>
 				<?php endif; ?>
 				
-				
-					
-					
-				 </div><!-- /.featured-callout -->	
-			<?php  // echo 'true'; ?>
+				</div><!-- /.featured-callout -->	
+			
 			<?php else : ?>
-			 <?php // echo 'false'; ?>
+			 <?php // do nothing ?>
 			<?php endif; ?>		 
-					  
+						  
 				<div class="z-10 w-full p-4 w-full text-dark md:text-white lg:rounded-b-lg md:text-right md:pr-20 flex justify-end hidden lg:block ">
 					<h3 class="font-serif italic text text-dark md:text-white sm:text-shadow"><strong>Eight Locations to Serve You:</strong><br />
 						Port Credit, Hamilton, St.&nbsp;Catharines, Georgian Bay, Eastern&nbsp;Ontario, Downtown&nbsp;Toronto, Caribbean&nbsp;(St.&nbsp;Maarten)
@@ -111,36 +119,16 @@
 						"fallback_cb" => false,
 					]); ?>
 				 </div>
-				 
-				 <?php if ( get_field( 'active', 'option' ) == 1 ) : ?>
-				 
+					 
+					 
+			</div><!-- END logo-hamburger-container -->
 				
-				 
-				 <div id="featured-callout" class="p-6 lg:mt-10 lg:mr-8 text-dark bg-blue-400 bg-opacity-10 lg:max-w-md md:hidden">
-					 
-					 <?php $header_announcement_thumbnail = get_field( 'header_announcement_thumbnail', 'option' ); ?>
-					  <?php if ( $header_announcement_thumbnail ) : ?>
-						  <img src="<?php echo esc_url( $header_announcement_thumbnail['url'] ); ?>" alt="<?php echo esc_attr( $header_announcement_thumbnail['alt'] ); ?>" class="mx-auto text-center" />
-					  <?php endif; ?>
-					 
-					 <h2 class="text-lg"><?php the_field( 'header_announcement_title', 'option' ); ?></h2>
-					 <?php the_field( 'header_announcement_text', 'option' ); ?>
-					 <a href="<?php the_field( 'header_annnouncement_link', 'option' ); ?>" alt="<?php the_field( 'header_announcement_title', 'option' ); ?>" class="text-blue-500 text-xs mt-3 float-right"
-					 <?php if ( get_field( 'header_announcement_link_new_tab', 'option' ) == 1 ) : ?>target="_blank"<?php endif; ?>>
-						 <button class="bg-transparent hover:bg-blue-500 text-xs text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded">More Info</button>
-					 </a>
-				 </div><!-- /.featured-callout -->
-				<?php  // echo 'true'; ?>
-				<?php else : ?>
-				 <?php // echo 'false'; ?>
-				<?php endif; ?>		 
-			
-					 
-					 
-			</div>
 		</div>
-	</div><!-- /#her-image sction -->
+	</div><!-- /#her-image section -->
 </header>
+
+
+
 
 <div class="z-10 text-center py-4 px-10 lg:rounded-b-lg md:text-right md:pr-20 flex justify-end lg:hidden">
 	<h3 class="font-serif italic text-sm"><strong>Eight Locations to Serve You:</strong><br />
@@ -149,7 +137,16 @@
 </div>	
 
 
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+
 
 <section class="z-20 w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
 	
@@ -173,6 +170,12 @@ Buy or sell your boat with an experienced professional guiding you through the e
 	</div>
 
 </section>
+
+
+
+
+
+
 
 
 
@@ -228,7 +231,7 @@ Buy or sell your boat with an experienced professional guiding you through the e
 			
 			
 				
-			<div class="px-5 py-8 md:max-w-md mt-6">
+			<div class="px-5 py-8 md:max-w-sm mt-6">
 				<div class="bg-white shadow-2xl rounded-lg mb-6 tracking-wide" >
 					<div class="md:flex-shrink-0">
 					
@@ -358,5 +361,6 @@ Buy or sell your boat with an experienced professional guiding you through the e
 		
 
 
-		<main class="max-w-screen-lg xl:max-w-screen-xl mx-auto mt-6 px-0 sm:px-4 md:px-8 mb-14 sm:mb-20 xl:mb-12">
+		<!-- <main class="max-w-screen-lg xl:max-w-screen-xl mx-auto mt-6 px-0 sm:px-4 md:px-8 mb-14 sm:mb-20 xl:mb-12"> -->
+			<main class="w-screen mx-auto">
 

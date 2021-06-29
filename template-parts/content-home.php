@@ -1,4 +1,5 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?>>
 
 <div id="main_content" class="container m-auto max-w-prose">
 	
@@ -7,7 +8,7 @@
 	</header>
 	
 
-</div><!-- end #main_content" container -->
+
 
 <?php if ( is_search() || is_archive() ) : ?>
 
@@ -41,5 +42,7 @@
 	</div>
 
 <?php endif; ?>
+
+</div><!-- end #main_content" container -->
 
 </article>

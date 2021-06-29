@@ -1,4 +1,6 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12' ); ?>>
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'row md:max-w-full lg:max-w-2xl xl:max-w-4xl' ); ?>>
 
 <header class="entry-header mb-4">
 	<?php the_title( sprintf( '<h2 class="entry-title text-2xl md:text-3xl font-bold leading-tight mb-1 text-dark"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
