@@ -11,6 +11,8 @@ module.exports = {
         './template-parts/content-single_listing.php',
         './resources/css/*.css',
         './resources/js/*.js',
+        './includes/banner.php',
+        './includes/search.php',
         './comments.php',
         './header.php',
         './footer.php',

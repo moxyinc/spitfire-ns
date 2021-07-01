@@ -24,7 +24,7 @@ $arr_sliderimages = get_gallery_images();
 				include get_template_directory() . '/includes/banner.php';
 			}
 	?>
-	<ul class="slides rounded-2xl rounded-b-none">
+	<ul class="slides rounded-2xl rounded-b-none scroll-show">
 		<?php if(count($arr_sliderimages) > 1) { ?>
 			<div class="imagehover2"></div>
 		<?php } ?>

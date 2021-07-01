@@ -83,4 +83,8 @@ header#masthead div#hero-image {
   }
 }
 
+.animate-fadeIn {
+  -webkit-animation: fadeIn 700ms ease-in forwards;
+  animation: fadeIn 700ms ease-in forwards;
+}
 
