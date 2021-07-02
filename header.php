@@ -27,7 +27,7 @@
 	<?php do_action("tailpress_header"); ?>
 
 <header id="masthead" class="relative w-screen">
-	<div id="hero-image" class="w-screen hero-image bg-cover bg-right-top bg-no-repeat flex flex-wrap">
+	<div id="hero-image" class="w-screen hero-image bg-cover bg-right-top 2xl:bg-right-bottom bg-no-repeat flex flex-wrap">
 		<div class="z-10 w-full border-solid border-t-8 border-blue-300">
 			
 			<div id="logo-hamburger-container" class="flex flex-wrap justify-between sm:mt-3 md:lg-9 pb-2 lg:min-h-full">

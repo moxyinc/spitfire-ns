@@ -2575,6 +2575,10 @@ header#masthead div#hero-image {
 }
 @media (min-width: 1536px) {
 
+	.\32xl\:bg-right-bottom {
+		background-position: right bottom;
+	}
+
 	.\32xl\:text-5xl {
 		font-size: 3rem;
 		line-height: 1;
