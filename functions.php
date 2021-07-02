@@ -221,11 +221,48 @@ function spitfire_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-	}
+	
+	
+	register_sidebar(array('name'=>'Footer 1',
+		'before_widget' => "<div class='w-full widget footer_widget mx-auto text-center'>",
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="text-white text-2xl text-center mb-3">',
+		'after_title' => '</h3 >',
+	) );
+
+	register_sidebar(array('name'=>'Footer 2',
+		'before_widget' => "<div class='w-full widget footer_widget'>",
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="text-white text-2xl text-center mb-3">',
+		'after_title' => '</h3 >',
+	) );
+
+	register_sidebar(array('name'=>'Footer 3',
+		'before_widget' => "<div class='w-full widget footer_widget'>",
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="text-white text-2xl text-center mb-3">',
+		'after_title' => '</h3 >',
+	) );
+
+	register_sidebar(array('name'=>'Footer 4',
+		'before_widget' => "<div class='widget footer_widget'>",
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="text-white text-2xl text-center mb-3">',
+		'after_title' => '</h3 >',
+	) );
+
+}
+
  
 add_action( 'widgets_init', 'spitfire_widgets_init' );
 
 
+//allow linebreaks in widget titles - added by jesse 20191118 use __br__ in the title
+function custom_widget_title( $title ) {
+	$title = str_replace( '__br__', '<br/>', $title );
+	return $title;
+}    
+add_filter( 'widget_title', 'custom_widget_title' );
 
 // Upscale thumbnails when the source image is smaller than the thumbnail size. Retain the aspect ratio.
 function alx_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){

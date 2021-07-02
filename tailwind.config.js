@@ -13,6 +13,7 @@ module.exports = {
         './resources/js/*.js',
         './includes/banner.php',
         './includes/search.php',
+        './functions.php',
         './comments.php',
         './header.php',
         './footer.php',

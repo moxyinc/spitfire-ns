@@ -87,3 +87,8 @@ header#masthead div#hero-image {
   animation: fadeIn 700ms ease-in forwards;
 }
 
+.gofollow img {
+  text-align: center;
+  margin: 0 auto;
+}
+
