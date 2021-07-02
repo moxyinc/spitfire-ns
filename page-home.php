@@ -3,7 +3,7 @@
 
 
 
-<div class="block scroll-show">
+<div class="block">
 
 	<div id="news-and-listings" class="row lg:flex lg:flex-wrap">
 		
