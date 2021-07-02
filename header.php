@@ -318,18 +318,6 @@ Buy or sell your boat with an experienced professional guiding you through the e
 								<?php endif; ?>
 										
 							</section>			
-									
-									
-									
-										
-										
-								
-									
-							
-						
-							
-							
-							
 					
 					</div>
 				</div>

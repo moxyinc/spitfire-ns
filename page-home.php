@@ -126,7 +126,51 @@
 		</div><!-- END #news-and-listings -->
 	</div><!-- end .block -->
 	
+<div class="block bg-gray-100">
 	
+	<h2 class="text-center  text-2xl text-primary pt-6 sm:text-3xl lg:text-4xl uppercase">News & Updates</h2>
+	
+	<div class="row flex flex-wrap">
+		
+		<?php
+		// the query
+		$the_query = new WP_Query(array(
+			'category_name' => 'news-updates',
+			'post_status' => 'publish',
+			'posts_per_page' => 4,
+		));
+		?>
+
+		<?php if ($the_query->have_posts()) : ?>
+			<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+			
+			<div class="w-full md:w-1/2 lg:w-1/4 px-6 pb-3">
+				<?php // the_category(); ?>
+				<a href="<?php the_permalink(); ?>" alt="<?php the_title_attribute(); ?>">
+					<h3 class="text-xl text-primary uppercase hover:text-blue-400 mb-6 border-t-2 border-secondary p-3"><?php the_title(); ?></h3>
+				</a>
+				<?php // the_excerpt(); ?>
+				<div class="pb-6"><?php the_post_thumbnail(); ?></div>
+				<?php //the_content(); ?>
+				
+				<div class="">
+					<?php echo wp_trim_words( get_the_content(), 40, '...' ); ?>
+					<i><a class="float-right text-primary hover:text-blue-400 font-bold" href="<?php
+						the_permalink() ?>" rel="bookmark">Read More</a></i>
+					<br/>
+				</div>
+			</div>
+
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+
+		<?php else : ?>
+			<p><?php __('No News'); ?></p>
+		<?php endif; ?>
+
+		
+	</div><!-- end .row -->
+</div><!-- end .block -->
 	
 	
 	
