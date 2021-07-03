@@ -62,8 +62,7 @@
 				<div class="lg:hidden">
 					<?php wp_nav_menu([
 						"container_id" => "primary-menu",
-						"container_class" => 
-						"hidden lg:block mt-4 p-4  lg:text-primary font-extrabold lg:mt-0 lg:p-0 lg:bg-transparent lg:block bg-white bg-opacity-60",
+						"container_class" => "relative lg:block mt-4 p-4  lg:text-primary font-extrabold lg:mt-0 lg:p-0 lg:bg-transparent lg:inline-block bg-white bg-opacity-60",
 						"menu_class" => "lg:flex lg:mx-4",
 						"theme_location" => "primary",
 						"li_class" => "lg:mx-2 py-1 md:py-3 px-2 hover:bg-blue-200",
@@ -150,7 +149,7 @@
 
 
 
-<section class="z-20 w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
+<section class="w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
 	
 	<div class="container mx-auto flex flex-wrap md:justify-around justify-center items-center my-6 xl:px-16 3xl:px-32">
 	
