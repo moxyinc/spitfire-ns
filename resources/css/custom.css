@@ -103,15 +103,15 @@ header#masthead div#hero-image {
 
 
 #large-menu #primary-menu ul li > ul {
-  @apply text-primary shadow-lg;
+  @apply text-primary bg-blue-200 shadow-lg;
   position: absolute;
   width: 200px;
-right: 0;
+  right: 0;
   padding: 0;
   margin: 0;
   text-align: left !important;
   border: none;
-  background: #7bc5f7;
+  /* background: #7bc5f7; */
   opacity: 0;
   transform: translateY(9%);
   transition: all 500ms ease;
