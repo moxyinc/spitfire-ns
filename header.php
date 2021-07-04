@@ -48,7 +48,7 @@
 				
 				<div id="hamburger-container" class="lg:hidden absolute right-10 top-4">
 					 <a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
- 						<button class="c-hamburger c-hamburger--criss-cross">
+ 						<button class="reative c-hamburger c-hamburger--criss-cross">
 							 <span class="sr-only">Open main menu</span>
 							   <div class="c-hamburger-inner">
 								 <span class="c-hamburger-bar"></span>
@@ -59,13 +59,13 @@
 					 </a>
 				 </div>	
 				
-				<div class="lg:hidden">
+				<div id="mobile-menu" class="w-full lg:hidden absolute mt-16 bg-green">
 					<?php wp_nav_menu([
 						"container_id" => "primary-menu",
-						"container_class" => "relative lg:block mt-4 p-4  lg:text-primary font-extrabold lg:mt-0 lg:p-0 lg:bg-transparent lg:inline-block bg-white bg-opacity-60",
+						"container_class" => "hidden mt-4 p-4  text-white font-extrabold  bg-primary  ",
 						"menu_class" => "lg:flex lg:mx-4",
 						"theme_location" => "primary",
-						"li_class" => "lg:mx-2 py-1 md:py-3 px-2 hover:bg-blue-200",
+						"li_class" => "mb-3",
 						"fallback_cb" => false,
 					]); ?>
 				 </div>
@@ -103,20 +103,21 @@
 			 <?php // do nothing ?>
 			<?php endif; ?>		 
 						  
-				<div class="z-10 w-full p-4 w-full text-dark md:text-white lg:rounded-b-lg md:text-right md:pr-20 flex justify-end hidden lg:block ">
+				<div class="hidden md:block w-full p-4 w-full text-dark md:text-white lg:rounded-b-lg md:text-right md:pr-20 flex justify-end hidden lg:block ">
 					<h3 class="font-serif italic text text-dark md:text-white sm:text-shadow"><strong>Eight Locations to Serve You:</strong><br />
 						Port Credit, Hamilton, St.&nbsp;Catharines, Georgian Bay, Eastern&nbsp;Ontario, Downtown&nbsp;Toronto, Caribbean&nbsp;(St.&nbsp;Maarten)
 					</h3>
-				</div>		  
+				</div>	
+				
 				 
-				<div class="w-screen m-auto flex justify-center z-10 lg:bg-white lg:bg-opacity-50">
+				<div id="large-menu" class="hidden w-screen mx-auto flex justify-center z-10 lg:bg-white lg:bg-opacity-50 lg:block">
+
 					<?php wp_nav_menu([
 						"container_id" => "primary-menu",
-						"container_class" =>
-						"hidden lg:block mt-4 p-4  lg:text-primary font-extrabold lg:mt-0 lg:p-0 lg:bg-transparent lg:block bg-white bg-opacity-60",
-						"menu_class" => "lg:flex lg:mx-4",
+						"container_class" => "hidden lg:block  text-primary font-extrabold bg-white bg-opacity-60",
+						"menu_class" => "lg:flex lg:mx-4 justify-center",
 						"theme_location" => "primary",
-						"li_class" => "lg:mx-2 py-1 md:py-3 px-2 hover:bg-blue-200",
+						"li_class" => "relative lg:mx-2 py-1 md:py-3 px-2 hover:bg-blue-200",
 						"fallback_cb" => false,
 					]); ?>
 				 </div>
@@ -131,7 +132,7 @@
 
 
 
-<div class="z-10 text-center py-4 px-10 lg:rounded-b-lg md:text-right md:pr-20 flex justify-end lg:hidden">
+<div class="md:hidden text-center py-4 px-10 lg:rounded-b-lg md:text-right md:pr-20 flex justify-end lg:hidden">
 	<h3 class="font-serif italic text-sm"><strong>Eight Locations to Serve You:</strong><br />
 		Port Credit, Hamilton, St.&nbsp;Catharines, Georgian Bay, Eastern&nbsp;Ontario, Downtown&nbsp;Toronto, Caribbean&nbsp;(St.&nbsp;Maarten)
 	</h3>
@@ -144,12 +145,7 @@
 
 
 
-
-
-
-
-
-<section class="w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10">
+<section id="intro-bar" class="w-screen bg-blue-50 bg-opacity-50 shadow-md mb-10 z-0">
 	
 	<div class="container mx-auto flex flex-wrap md:justify-around justify-center items-center my-6 xl:px-16 3xl:px-32">
 	
