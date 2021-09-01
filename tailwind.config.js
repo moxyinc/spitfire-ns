@@ -1,4 +1,4 @@
-const plugin = require("tailwindcss/plugin");
+ const plugin = require("tailwindcss/plugin");
 const _ = require("lodash");
 const tailpress = require("./tailpress.json");
 
@@ -24,6 +24,7 @@ module.exports = {
         './page-home.php',
         './page-*.php',
         './archive.php',
+        './archive-listing.php',
         './archive-*.php',
         './404.php',
         './safelist.txt'
@@ -38,16 +39,27 @@ module.exports = {
       },
     },
     extend: {
+      inset: {
+         '-16': '-4rem',
+         '-8': '-2rem',
+         '-4': '-1rem',
+         },
       animation: {
-        fadeIn: "fadeIn 500ms ease-in forwards"
+        fadeIn: "fadeIn 500ms ease-in-out forwards",
       },
       keyframes: {
+        // fadeIn: {
+        //   "0%": { opacity: 0 , transform: 'translateX(0)' },
+        //  "100%": { opacity: 1, transform: 'translateX(1rem)' }
+        // },
         fadeIn: {
           "0%": { opacity: 0 },
-          "100%": { opacity: 1 }
+         "100%": { opacity: 1 }
         },
+    
       animation: ["motion-safe"]
       },
+      
       colors: tailpress.colors,
       fontFamily: {
         headline: ["Oswald", "sans-serif"],
@@ -57,7 +69,7 @@ module.exports = {
       },
     },
     deliciousHamburgers: {
-      size: '40px', // must be in px.
+      size: '40px', // must be in px...
       color: '#262261',
       colorLight: '#fff8f4',
       padding: '0px', // must be in px.

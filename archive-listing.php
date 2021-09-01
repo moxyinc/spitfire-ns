@@ -46,7 +46,11 @@
 						
 						
 						
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12 scroll-show' ); ?>>
+						
+						
+						<article id="post-<?php the_ID(); ?>" <?php post_class( 'relative mb-12 scroll-show' ); ?>>
+						
+			
 						
 						<header class="entry-header mb-4">
 							
@@ -210,7 +214,7 @@
 					<?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						
 						
-					<article id="post-<?php the_ID(); ?>" <?php post_class( 'mb-12 scroll-show' ); ?>>
+					<article id="post-<?php the_ID(); ?>" <?php post_class( 'relative mb-12 scroll-show' ); ?>>
 					
 					<header class="entry-header mb-4">
 						

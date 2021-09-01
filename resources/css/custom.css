@@ -83,9 +83,16 @@ header#masthead div#hero-image {
   }
 }
 
-.animate-fadeIn {
-  animation: fadeIn 700ms ease-in forwards;
+
+/* .animate-fadeIn {
+  animation: fadeIn 2700ms ease-in forwards;
 }
+
+.animate-fadeInLeft {
+  animation: fadeIn 700ms ease-in forwards;
+  left: 0;
+  border: 3px solid green;
+} */ 
 
 .gofollow img {
   text-align: center;
